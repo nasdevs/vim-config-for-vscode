@@ -8,7 +8,7 @@
     "vim.leader": "<space>",
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "j"],
+            "before": ["j", "k"],
             "after": ["<Esc>"]
         }
     ],
@@ -21,6 +21,10 @@
             "before": ["<S-tab>"],
             "commands": ["workbench.action.previousEditor"]
         }, 
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["workbench.view.explorer"]
+        }
     ],
     "vim.visualModeKeyBindings": [
         {
@@ -40,6 +44,10 @@
         {
             "before": ["<leader>", "l"],
             "after": ["$"]
+        },
+        {
+            "before": ["<leader>", "a"], 
+            "after": ["g", "g", "V", "G"]
         }
     ]
 }
